@@ -8,7 +8,7 @@ A fault-tolerant, replicated counter service built using gRPC in Python. Feature
 
 ---
 
-## 🏛 System Architecture Overview
+## System Architecture Overview
 
 - **Part A (gRPC & Idempotency):** Thread-safe in-memory state store protected by reentrant locking. Retried client requests with identical idempotency keys are deduplicated without re-applying deltas.
 - **Part B (Lamport Clocks):** Logical clocks embedded directly into gRPC headers across all client-server boundaries for causal event ordering and trace visualization.
@@ -16,7 +16,7 @@ A fault-tolerant, replicated counter service built using gRPC in Python. Feature
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 dcc-assignment2/
