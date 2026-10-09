@@ -1,8 +1,6 @@
 # Distributed Replicated Counter Service
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
-[![gRPC](https://img.shields.io/badge/gRPC-v1.62-green.svg)](https://grpc.io/)
-[![Testing](https://img.shields.io/badge/Testing-pytest-yellow.svg)](https://docs.pytest.org/)
+
 
 A fault-tolerant, replicated counter service built using gRPC in Python. Features logical time tracking via Lamport Clocks, duplicate suppression via client-generated idempotency keys, and majority-quorum write consensus ($N=3, Q=2$).
 
